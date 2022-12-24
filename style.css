@@ -218,8 +218,7 @@ footer img {
   footer {
     width: 328px;
   }
-
-
+}
 
 @media (max-width: 850px) {
   .navMain a {
@@ -247,5 +246,8 @@ footer img {
   .navMain a {
     font-size: 9px;
     line-height: 10px;
+  }
+  h3 {
+    margin: 10px;
   }
 }
