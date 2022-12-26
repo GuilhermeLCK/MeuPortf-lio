@@ -98,7 +98,7 @@ h2 {
   margin-top: 21px;
 }
 img {
-  height: 45%;
+  height: 80%;
   width: 100%;
   border-radius: 5px;
 }
@@ -112,7 +112,7 @@ img {
   cursor: pointer;
 }
 .Projects div:hover {
-  border: 3px solid black;
+  border: 2px solid black;
   border-radius: 8px;
   transition: 0, 8s;
 }
