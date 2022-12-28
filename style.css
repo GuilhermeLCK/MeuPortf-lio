@@ -98,7 +98,7 @@ h2 {
   margin-top: 21px;
 }
 img {
-  height: 80%;
+  height: 60%;
   width: 100%;
   border-radius: 5px;
 }
@@ -110,6 +110,7 @@ img {
   padding: 16px;
   border-radius: 8px;
   cursor: pointer;
+  text-align: center;
 }
 .Projects div:hover {
   border: 2px solid black;
@@ -125,7 +126,7 @@ h3 {
 .Projects p {
   font-size: 18px;
   margin-left: 23px;
-  text-align: start;
+  text-align: center;
 }
 .sectionSkills {
   width: 100vw;
