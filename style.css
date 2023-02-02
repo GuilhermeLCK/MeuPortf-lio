@@ -1,64 +1,96 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Roboto:ital,wght@0,300;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Heebo", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   scroll-behavior: smooth;
   text-decoration: none;
-  color: black;
   overflow-x: hidden;
+  background-color: #1d1d2f;
 }
 
-.navMain {
+.header {
   display: flex;
-  justify-content: end;
+  align-items: center;
+  justify-content: center;
   max-width: 100vw;
-  margin: 27 auto 0;
-  padding-right: 25px;
+  padding-top: 20px;
 }
 
-.navMain a {
+.header a {
   text-decoration: none;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 29px;
-  padding: 23px;
-  color: #000;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 20px;
+  color: #fff;
   cursor: pointer;
 }
-.navMain a:hover {
+.header a:hover {
   color: #ff6464;
-  border-bottom: 1px black solid;
-  transition: 0, 8s;
+  border-bottom: 1px #ff6464 solid;
+  transition: 0, 9s;
+  padding-top: 5px;
 }
 
-.sectionMain {
+.presentation {
   display: flex;
-  width: 50vw;
+  width: 70vw;
   justify-content: space-between;
   margin: 175px auto 0;
 }
-.sectionMain h1 {
-  font-size: 44px;
+
+.presentation h1 {
+  font-size: 50px;
   font-weight: bold;
   line-height: 60px;
   padding-bottom: 20px;
+  color: #fff;
 }
-.sectionMain p {
+.animation {
+  color: #ff6464;
+  font-size: 40px;
+}
+.presentation p {
   width: 500px;
-  font-size: 16px;
-  line-height: 27px;
-  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
 }
-.imgMain {
-  width: 243px;
-  height: 243px;
+.my-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon-redes {
+  overflow-y: hidden;
+}
+.my-img .icon-redes img {
+  margin-top: 30px;
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  transition: 0.5s;
+}
+.my-img .icon-redes img:hover {
+  transform: rotate(360deg);
+}
+.img-presentation {
+  width: 350px;
+  height: 343px;
   border-radius: 50%;
+  transition: 0.3s;
+}
+.img-presentation:hover {
+  overflow: hidden;
+  border: 10px solid #ff6464;
+  box-shadow: 8px 8px 13px #e1d1d1;
+  transform: scale(0.9);
 }
 
-.buttonMain {
+.button-presentation {
   margin-top: 38px;
   width: 288px;
   height: 47px;
@@ -72,186 +104,220 @@
   cursor: pointer;
   letter-spacing: 2px;
 }
-.buttonMain:hover {
+.button-presentation:hover {
   color: #262626;
+  font-size: 22px;
 }
 
-.sectionProjects {
-  background-color: #384772;
-  padding: 24px 0;
-  margin: 70px 0;
+.section-projects {
+  margin: 100px auto 50px auto;
 }
 
-h2 {
-  font-size: 28px;
-  color: white;
+.section-projects h2 {
+  font-size: 35px;
+  color: #fff;
   text-align: center;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
 }
-.mainProjects {
-  width: 50vw;
+.main-projects {
+  width: 70vw;
   margin: 0 auto;
 }
-.Projects {
+.my-projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 21px;
 }
-img {
-  height: 60%;
+.my-projects img {
+  height: 70%;
   width: 100%;
   border-radius: 5px;
 }
 
-.Projects > div {
-  background-color: white;
-  height: 400px;
-  width: 49%;
+.my-projects > div {
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  height: 350px;
+  width: 33%;
   margin: 0 0 20px 0;
   padding: 16px;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   text-align: center;
+  overflow-y: hidden;
 }
-.Projects div:hover {
-  border: 2px solid black;
-  border-radius: 8px;
-  transition: 0, 8s;
+.my-projects div i {
+  color: #fff;
+  padding: 0 10px;
+  font-size: 25px;
+  border: none;
 }
-.EmBreve {
-  height: 90%;
-}
-h3 {
-  font-size: 23px;
-  font-weight: bold;
-  margin: 14px 0 9px 23px;
-}
-.Projects p {
-  font-size: 18px;
-  margin-left: 23px;
-  text-align: center;
-}
-.sectionSkills {
-  width: 100vw;
-}
-.sectionSkills h2 {
-  color: #262626;
-  margin-bottom: 6px;
-}
-.mainSkills {
-  width: 100vw;
-  background-color: #384772;
-  padding: 12px 0;
+.projects-icon {
   display: flex;
+  flex-direction: row;
+  text-align: center;
   justify-content: center;
+  border: none;
+}
+.my-projects > div:hover {
+  border: 2px solid #fff;
+  transition: 0.9s;
 }
 
-.Icons {
-  width: 75px;
-  height: 75px;
-  margin-left: 25px;
+.my-projects h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 20px 0px;
+  text-align: center;
+  color: #fff;
+  font-family: "Itim", cursive;
+}
+.my-projects h3:hover {
+  color: #ff6464;
+}
+
+.section-skills {
+  width: 90vw;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 130px;
+  overflow-y: hidden;
+}
+.section-skills h2 {
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 50px;
+  font-family: "Ubuntu", sans-serif;
+
+  flex-wrap: wrap;
+}
+.section-skills img {
+  padding: 0 25px;
+  transition: 0.5;
+  width: 110px;
+  height: 55px;
+}
+.section-skills img:hover {
+  transform: scale(1.3);
 }
 
 footer {
-  width: 856px;
+  width: 50vw;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  border-top: 2px solid #384772;
+  border-top: 2px solid #fff;
   margin-top: 150px;
+  margin-bottom: 20px;
 }
 footer p {
   text-align: center;
   width: 100%;
+  color: #fff;
+  padding-top: 20px;
 }
 
-footer img {
-  margin: 20px 0 5px 0;
-  width: 30px;
-  height: 30px;
-  margin-left: 15px;
-}
-
-@media (max-width: 1580px) {
-  .navMain a {
-    font-size: 30px;
-    width: 100%;
-  }
-  .navMain {
-    width: 100%;
-  }
-  .sectionMain {
+@media (max-width: 1350px) {
+  .presentation {
     flex-direction: column-reverse;
     width: 100%;
     align-items: center;
     margin-top: 30px;
   }
-  .sectionMain h1 {
-    font-size: 32px;
+  .presentation h1 {
+    font-size: 35px;
     margin-bottom: 10px;
     text-align: center;
     line-height: 35px;
   }
-  .sectionMain p {
+  .presentation p {
     font-size: 20px;
     text-align: center;
   }
-  .sectionMain img {
-    width: 200px;
-    height: 200px;
+  .presentation img {
+    width: 300px;
+    height: 300px;
     margin: 0 auto 36px;
   }
-  .sectionMain button {
+  .presentation button {
     margin-left: auto;
     margin-right: auto;
     display: block;
   }
+  .main-projects {
+    width: 85vw;
+    margin: 0 auto;
+  }
+  .my-projects > div {
+    width: 49%;
+  }
+  .skills {
+    height: 350px;
+  }
 
-  .Projects > div {
-    width: 100%;
-    text-align: center;
-    height: 80%;
-  }
-  .Projects h3 {
-    font-size: 35px;
-  }
-  .Projects p {
-    font-size: 25px;
-  }
   footer {
     width: 328px;
   }
 }
 
-@media (max-width: 850px) {
-  .navMain a {
-    font-size: 15px;
-
+@media (max-width: 835px) {
+  .main-projects {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .my-projects > div {
     width: 100%;
-  }
-  .sectionMain p {
-    font-size: 15px;
-    width: 80vw;
-  }
-  .Projects > div {
-    width: 100vw;
-    text-align: center;
-    height: 50%;
-  }
-  .Projects h3 {
-    font-size: 20px;
-  }
-  .Projects p {
-    font-size: 15px;
+    margin: 0 0 0 0;
   }
 }
-@media (max-width: 450px) {
-  .navMain a {
-    font-size: 9px;
+@media (max-width: 700px) {
+  .header {
+    justify-content: space-around;
+  }
+  .header a {
+    font-size: 25px;
     line-height: 10px;
   }
-  h3 {
-    margin: 10px;
+  .skills img {
+    margin-top: 35px;
   }
+  .section-skills h2 {
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .header a {
+    font-size: 19px;
+    line-height: 10px;
+  }
+  .presentation p {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 390px) {
+  .header a {
+    font-size: 15px;
+    line-height: 10px;
+  }
+}
+
+.header,
+.presentation,
+.section-projects,
+.section-skills,
+#redes {
+  visibility: hidden;
 }

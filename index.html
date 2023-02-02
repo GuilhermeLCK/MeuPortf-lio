@@ -4,24 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="favicon.ico.png" type="image/x-icon">
     <title>Portfólio</title>
-    <link rel="icon" href="https://www.favicon.cc/logo3d/350544.png" />
   </head>
   <body>
     <header id="home">
-      <nav class="navMain">
+      <nav class="header">
         <a href="#home">Home</a>
         <a href="#projetos">Projetos</a>
         <a href="#habilidades">Habilidades</a>
-        <a href="#redes">Redes Profissionais</a>
+        
       </nav>
     </header>
-    <section class="sectionMain">
+    <section class="presentation">
       <div>
         <h1>
           Óla, sou o Guilherme <br />
-          Desenvolvedor
+          <span class="animation"> Desenvolvedor Front-End </span>
         </h1>
         <p>
           Estou apaixonado por programação, e por isso escolhi entrar de cabeça
@@ -33,18 +43,32 @@
         </p>
 
         <a
-          href="https://drive.google.com/file/d/1UbBP3RUobkoxPKOI9i50cRCPoypX6LdY/view?usp=share_link"
+          href="https://drive.google.com/file/d/1zg7CVVG0Bptces6hBPtdFFxAID-J_Pds/view?usp=share_link"
           target="_blank"
         >
-          <button class="buttonMain">Baixar Currículo</button></a
+          <button class="button-presentation">Baixar Currículo</button></a
         >
       </div>
-      <div><img src="img perfil.jpg" alt="imgPerfil" / class="imgMain"></div>
+      <div class="my-img">
+        <img src="imgperfil.jpg" alt="imgPerfil" / class="img-presentation">
+        <div class="icon-redes">
+          <a target="_blank" href="https://www.linkedin.com/in/gui-lcs/"
+          ><img src="icons8-linkedin.svg" alt="Linkedin"
+        />
+        <a target="_blank" href="https://github.com/GuilhermeLCK"
+          ><img src="github.svg" alt="Git"
+        />
+        <a target="_blank" href="https://wa.me/5585989728250"
+          ><img src="whatsapp.svg" alt="Wpp"
+        />
+        </div>
+        
+      </div>
     </section>
-    <section class="sectionProjects">
-      <div class="mainProjects">
-        <h2 id="projetos">Meus projetos</h2>
-        <div class="Projects">
+    <section class="section-projects">
+      <div class="main-projects">
+        <h2 id="projetos">Projetos</h2>
+        <div class="my-projects">
           <div>
             <a
               href="https://guilhermelck.github.io/CalculadoraIMC/"
@@ -52,73 +76,108 @@
             >
               <img src="CalculadoraIMC.png" alt="CalculadoraIMC.png" />
               <h3>Calculadora IMC</h3>
-              <p>Calculadora de percentual de gordura usando JS,CSS e HTML.</p>
+                
+                <div class="projects-icon">
+                <p><i class="fa-brands fa-js"></i></p>
+                <p><i class="fa-brands fa-html5"></i></p>
+                <p><i class="fa-brands fa-css3-alt"></i></p>
+               </div>
+              
+              
+             
+              
             </a>
           </div>
           <div>
             <a href="https://guilhermelck.github.io/TelaLogin/" target="_blank"
               ><img src="Login.png" alt="Login.png" />
               <h3>Tela de Login</h3>
-              <p>Tela de Login usando JS,CSS e HTML.</p></a
-            >
+              <div class="projects-icon">
+                <p><i class="fa-brands fa-js"></i></p>
+                <p><i class="fa-brands fa-html5"></i></p>
+                <p><i class="fa-brands fa-css3-alt"></i></p>
+               </div>
+              
+            
           </div>
           <div>
             <a
               href="https://guilhermelck.github.io/LandingPageLee/"
               target="_blank"
               ><img src="Lol.png" alt="Lol.png" />
-              <h3>Landing Page</h3>
-              <p>
-                landing Page com o tema League of Legends usando HTML e CSS.
-              </p></a
+              
+              </a
             >
+            <h3>Landing Page</h3>
+            <div class="projects-icon">
+              
+              <p><i class="fa-brands fa-html5"></i></p>
+              <p><i class="fa-brands fa-css3-alt"></i></p>
+             </div>
           </div>
           <div>
             <a
               href="https://guilhermelck.github.io/ProjectMusic/"
               target="_blank"
               ><img src="Music.png" alt="Music.png" />
-              <h3>Playlist Music</h3>
-              <p>
-                Playlist simples com frames do Spotify usando HTML e CSS.
-              </p></a
+             
+              </a
+              
             >
+            <h3>Playlist Music</h3>
+            <div class="projects-icon">
+              
+              <p><i class="fa-brands fa-html5"></i></p>
+              <p><i class="fa-brands fa-css3-alt"></i></p>
+             </div>
           </div>
           <div>
             <a href="https://guilhermelck.github.io/CalcJS/" target="_blank"
               ><img src="CalculadoraMAT.png" alt="CalcJS" />
-              <h3>Calculadora Matemática</h3>
-              <p>Calculadora matemática usando JS,HTML e CSS.</p></a
+              
+              </a
             >
+            <h3>Calculadora Matemática</h3>
+            <div class="projects-icon">
+              <p><i class="fa-brands fa-js"></i></p>
+              <p><i class="fa-brands fa-html5"></i></p>
+              <p><i class="fa-brands fa-css3-alt"></i></p>
+             </div>
           </div>
           <div>
             <a href="#projetos"
               ><img src="Em breve.jpg" alt="EmBreve" class="EmBreve" />
-              <h3></h3>
-              <p></p
-            ></a>
+              <h3>Em desenvolvimento ...</h3>
+              
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="sectionSkills">
-      <h2 id="habilidades">Minhas Habilidades</h2>
-      <div class="mainSkills">
-        <img src="html.png" alt="" class="Icons" />
-        <img src="css.png" alt="" class="Icons" />
-        <img src="js.png" alt="" class="Icons" />
+    <section class="section-skills" >
+      <div class="habilidades">
+        <h2 id="habilidades">Habilidades</h2>
       </div>
+      <div class="skills">
+        
+        <img src="react.png" alt="IconReact"/>
+        <img src="javascript.svg" alt="IconJS"/>
+        <img src="html.svg" alt="IconHtml"/>
+        <img src="css.svg" alt="IconCss"/>
+        <img src="git.svg" alt="IconGit"/>
+        <img src="node.svg" alt="IconNode"/>
+        <img src="sass.svg" alt="IconSass"/>
+        
+      </div>
+     
     </section>
 
     <footer id="redes">
-      <a target="_blank" href="https://www.linkedin.com/in/gui-lcs/"
-        ><img src="linkedin.png" alt="Linkedin"
-      /></a>
-      <a target="_blank" href="https://github.com/GuilhermeLCK"
-        ><img src="git.png" alt="Git"
-      /></a>
-      <p>&copy; Guilherme DEV 2022</p>
+      <p>&copy; Guilherme 2023</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
