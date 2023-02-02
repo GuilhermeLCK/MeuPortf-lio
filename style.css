@@ -37,7 +37,7 @@
 .presentation {
   display: flex;
   width: 70vw;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 175px auto 0;
 }
 
