@@ -26,11 +26,12 @@
   padding: 20px;
   color: #fff;
   cursor: pointer;
+  text-align: center;
 }
 .header a:hover {
   color: #ff6464;
   border-bottom: 1px #ff6464 solid;
-  transition: 0, 9s;
+  transition: 0.7s;
   padding-top: 5px;
 }
 
@@ -226,7 +227,9 @@ footer p {
   color: #fff;
   padding-top: 20px;
 }
-
+.nav-button {
+  visibility: hidden;
+}
 @media (max-width: 1350px) {
   .presentation {
     flex-direction: column-reverse;
@@ -247,7 +250,7 @@ footer p {
   .presentation img {
     width: 300px;
     height: 300px;
-    margin: 0 auto 36px;
+    margin: 0 auto 28px;
   }
   .presentation button {
     margin-left: auto;
@@ -267,6 +270,17 @@ footer p {
 
   footer {
     width: 328px;
+  }
+  .header {
+    display: none;
+  }
+  #home {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .nav-button {
+    visibility: visible;
   }
 }
 
@@ -313,11 +327,70 @@ footer p {
     line-height: 10px;
   }
 }
-
 .header,
 .presentation,
 .section-projects,
 .section-skills,
 #redes {
   visibility: hidden;
+}
+
+.nav-button {
+  border: 0;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: transparent;
+  margin: 8px;
+  cursor: pointer;
+}
+.nav-button i {
+  color: #ff6464;
+}
+
+.overlay {
+  width: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  transition: all 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  background-color: transparent;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  display: block;
+  font-size: 34px;
+  transition: 0.5s;
+  background-color: transparent;
+  color: #e1d1d1;
+  padding-bottom: 25px;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #ff6464;
+  font-size: 37px;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 25px;
+  right: 45px;
+  font-size: 60px;
+}
+.overlay .closebtn:hover {
+  transform: scale(1.5);
+  font-size: 60px;
 }

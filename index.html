@@ -19,6 +19,15 @@
     <title>Portfólio</title>
   </head>
   <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#presentation" onclick="closeNav()">Home</a>
+        <a href="#projetos" onclick="closeNav()">Projetos</a>
+        <a href="#habilidades" onclick="closeNav()">Habilidades</a>
+        
+      </div>
+    </div>
     <header id="home">
       <nav class="header">
         <a href="#home">Home</a>
@@ -26,8 +35,12 @@
         <a href="#habilidades">Habilidades</a>
         
       </nav>
+      <button class="nav-button" onclick="openNav()">
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </button>
     </header>
-    <section class="presentation">
+   
+    <section class="presentation" id="presentation">
       <div>
         <h1>
           Óla, sou o Guilherme <br />
@@ -137,7 +150,7 @@
               
               </a
             >
-            <h3>Calculadora Matemática</h3>
+            <h3>Calculadora </h3>
             <div class="projects-icon">
               <p><i class="fa-brands fa-js"></i></p>
               <p><i class="fa-brands fa-html5"></i></p>

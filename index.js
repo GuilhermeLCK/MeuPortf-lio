@@ -19,3 +19,11 @@ sr.reveal(".section-skills", {
   rotate: { x: 0, y: 100, z: 0 },
 });
 sr.reveal("#redes", { duration: 2000 });
+
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
